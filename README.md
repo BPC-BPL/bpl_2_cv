@@ -74,3 +74,16 @@ následne je ešte potrebné pridať v Cmakeliste cestu k jednotlivým témam a 
 "msg/Gpsposition.msg"
 "msg/Rcstatus.msg"
 ```
+
+následne môžeme buildovať
+
+build pre konkretny package
+```
+colcon build --packages-select <package_name>
+```
+
+nakoľko posledná pripravená knižnica potrebuje funkčné interfaces, musíme package zbuildovat predtým ako ideme buildovat dalsi a nasourcovať si ho
+```
+source install/setup.bash
+```
+následne môžeme pridať do zložky druhú knižnicu a zbuildovat spolu klasicky
