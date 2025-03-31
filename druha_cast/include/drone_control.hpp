@@ -16,7 +16,6 @@
 #include <mavros_msgs/msg/state.hpp>
 #include <geographic_msgs/msg/geo_pose_stamped.hpp>
 
-#include "bpl_interfaces/srv/position.hpp"
 #include "bpl_uav_control/data_structures.hpp"
 
 class DroneControl : public rclcpp::Node

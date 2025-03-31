@@ -23,7 +23,6 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(mavros_msgs REQUIRED)
-find_package(bpl_interfaces REQUIRED)
 
 include_directories(include)
 
@@ -47,7 +46,6 @@ geometry_msgs
 mavros_msgs
 sensor_msgs
 Eigen3
-bpl_interfaces
 )
 
 add_executable(drone_control src/drone_control_node.cpp src/drone_control.cpp)
