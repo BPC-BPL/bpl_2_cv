@@ -87,3 +87,25 @@ nakoľko posledná pripravená knižnica potrebuje funkčné interfaces, musíme
 source install/setup.bash
 ```
 následne môžeme pridať do zložky druhú knižnicu a zbuildovat spolu klasicky
+
+## Volanie servisov 
+
+volanie takeoff
+```
+ros2 service call /takeff std_srvs/srv/Trigger "{}"
+```
+
+volanie land
+```
+ros2 service call /land std_srvs/srv/Trigger "{}"
+```
+
+volanie zmeny let modu na GUIDED
+```
+ros2 service call /set_mode std_srvs/srv/Trigger "{}"
+```
+
+volanie letu na bod
+```
+ros2 service call /fly_to_point bpl_interfaces/srv/Position "{latitude: -35.363261, longtitude: 149.1652373, altitude: 603.5586}"
+```
