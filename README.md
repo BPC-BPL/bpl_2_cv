@@ -35,3 +35,8 @@ nasledne môžete zistiť typ správy pomocou ktorej sa zdiela stav:
 - GPS
 - stav UAV (state)
 - IMU
+
+------
+Z tretej časti si nakopirujte bpl_interfaces
+
+pre tvorbu custom správ potrebujeme v zlozke msg vytvoriť formát našich správ
